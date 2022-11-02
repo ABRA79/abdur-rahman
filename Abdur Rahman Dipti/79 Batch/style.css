@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ccc;
+}
+/* .ba {
+  font-size: 2.25rem;
+  padding: 20px;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 2px #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
+  background-color: #fff;
+  text-align: center;
+}
+.ba::before {
+  content: "Joy  ";
+}
+.ba::after {
+  content: "desh";
+} */
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.pain {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background-image: url("./download.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.pain::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background: url("./apu.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  top: -70px;
+  left: -70px;
+  transition: 1s;
+}
+.pain::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background: url("./bubli.png");
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  transition: 1s;
+}
+.puja {
+  width: 150px;
+  height: 150px;
+  background: url(./poja.png);
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+.dighi {
+  width: 150px;
+  height: 150px;
+  background: url(./dighi1.png);
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  transition: 1s;
+}
+.pain:hover::before {
+  top: 225px;
+  left: 225px;
+}
+.pain:hover::after {
+  bottom: 225px;
+  right: 225px;
+}
+.pain:hover > .puja {
+  bottom: 225px;
+  left: 225px;
+}
+.pain:hover > .dighi {
+  top: 225px;
+  right: 225px;
+}
+/* .arp {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.pra {
+  width: 200px;
+  height: 200px;
+  background: dodgerblue;
+  margin: 20px;
+  position: relative;
+  z-index: 10;
+}
+.rpa {
+  width: 200px;
+  height: 200px;
+  background: limegreen;
+  position: relative;
+  top: 120px;
+  left: 120px;
+  z-index: -5;
+}
+.os {
+  width: 200px;
+  height: 200px;
+  background: hotpink;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: -10;
+}
+.bi {
+  width: 200px;
+  height: 200px;
+  background: orange;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  z-index: -20;
+} */
