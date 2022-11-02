@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background: red;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: auto auto auto;
+  /* auto dile soman hobes r 1fr/2fr dile parthokkohbe */
+  padding: 20px;
+}
+.pain:first-child {
+  background: limegreen;
+}
+.pain:nth-child(2) {
+  background: transparent;
+}
+
+.pain:last-child {
+  background: yellow;
+}
+.pain {
+  display: grid;
+  grid-gap: 8px;
+}
+.pain div {
+  background: gold;
+}
+.flag {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.flag1 {
+  width: 300px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+/* .flag1 div {
+  width: 100%;
+  height: 100%;
+} */
+/* display: grid; hole width r height no need */
+.flag1 div:first-child {
+  background: #0065b3;
+}
+.flag1 div:nth-child(2) {
+  background: #fef200;
+}
+.flag1 div:last-child {
+  background: #ed1b24;
+}
+.flag2 {
+  width: 300px;
+  height: 200px;
+  display: grid;
+  grid-template-rows: 2fr repeat(2, 1fr);
+}
+.flag2 div:first-child {
+  background: #fef200;
+}
+.flag2 div:nth-child(2) {
+  background: #0065b3;
+}
+.flag2 div:last-child {
+  background: #ed1b24;
+}
